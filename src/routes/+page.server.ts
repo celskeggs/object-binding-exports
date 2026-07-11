@@ -1,8 +1,4 @@
-async function myload() {
-    return {value: 10};
-}
-
 // Works
-// export const load = myload;
+// export const load = async () => ({value: 10});
 // Doesn't work
-export const { load } = { load: myload };
+export const { load } = { load: async () => ({value: 10}) };
