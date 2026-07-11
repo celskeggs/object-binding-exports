@@ -3,6 +3,6 @@ async function myload() {
 }
 
 // Works
-export const load = myload;
+// export const load = myload;
 // Doesn't work
-// export const { load } = { load: myload };
+export const { load } = { load: myload };
